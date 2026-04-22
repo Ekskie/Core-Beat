@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://c5p8x20v7lvrj"]
+
+[ext_resource type="Texture2D" uid="uid://2tbjl4uhl5pk" path="res://Assets/Art/UI/behind-btn.png" id="1_thkxx"]
+[ext_resource type="Texture2D" uid="uid://d2qmeixgek260" path="res://Assets/Art/UI/border-btn.png" id="2_4p8lb"]
+[ext_resource type="Texture2D" uid="uid://dyt65l4rqvhbi" path="res://Assets/Art/UI/abouts-icon.png" id="3_udmvt"]
+[ext_resource type="Texture2D" uid="uid://yx41d5aocf3l" path="res://Assets/Art/UI/battle-icon.png" id="3_yuew1"]
+[ext_resource type="Texture2D" uid="uid://lrtsgi28tgqb" path="res://Assets/Art/UI/shops.png" id="4_u8xhc"]
+[ext_resource type="Texture2D" uid="uid://cgeucunwwiwg3" path="res://Assets/Art/UI/quit-icon.png" id="6_6ru65"]
+[ext_resource type="Texture2D" uid="uid://dv5fbxvbj0cy8" path="res://Assets/Art/UI/test.png" id="7_6ru65"]
+[ext_resource type="Texture2D" uid="uid://bk167ls5xs5re" path="res://Assets/Art/UI/Logo.png" id="7_u8xhc"]
+
+[node name="Node2D" type="Node2D" unique_id=1580100099]
+
+[node name="Buttons" type="Node" parent="." unique_id=417348599]
+
+[node name="BattleBtn" type="Button" parent="Buttons" unique_id=2959452]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 371.00006
+offset_top = 180.0
+offset_right = 536.00006
+offset_bottom = 350.0
+scale = Vector2(0.8, 0.8)
+
+[node name="BehindBtn" type="Sprite2D" parent="Buttons/BattleBtn" unique_id=647555652]
+position = Vector2(81, 83)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_thkxx")
+
+[node name="BorderBtn" type="Sprite2D" parent="Buttons/BattleBtn" unique_id=1782811154]
+position = Vector2(81, 83)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_4p8lb")
+
+[node name="BattleIcon" type="Sprite2D" parent="Buttons/BattleBtn" unique_id=2136612283]
+position = Vector2(94, 88)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_yuew1")
+
+[node name="ShopBtn" type="Button" parent="Buttons" unique_id=269984250]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 223.00006
+offset_top = 256.0
+offset_right = 388.00006
+offset_bottom = 426.0
+scale = Vector2(0.8, 0.8)
+metadata/_edit_use_anchors_ = true
+
+[node name="BehindBtn" type="Sprite2D" parent="Buttons/ShopBtn" unique_id=257484451]
+position = Vector2(81, 83)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_thkxx")
+
+[node name="BorderBtn" type="Sprite2D" parent="Buttons/ShopBtn" unique_id=1418386173]
+position = Vector2(81, 83)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_4p8lb")
+
+[node name="Shops" type="Sprite2D" parent="Buttons/ShopBtn" unique_id=274220131]
+position = Vector2(91, 89)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("4_u8xhc")
+
+[node name="AboutBtn" type="Button" parent="Buttons" unique_id=1327195432]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 71.0
+offset_top = 328.0
+offset_right = 236.0
+offset_bottom = 498.0
+scale = Vector2(0.8, 0.8)
+metadata/_edit_use_anchors_ = true
+
+[node name="BorderBtn" type="Sprite2D" parent="Buttons/AboutBtn" unique_id=991407097]
+position = Vector2(81, 83)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_4p8lb")
+
+[node name="BehindBtn" type="Sprite2D" parent="Buttons/AboutBtn" unique_id=783634805]
+position = Vector2(81, 83)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_thkxx")
+
+[node name="AboutsIcon" type="Sprite2D" parent="Buttons/AboutBtn" unique_id=884879675]
+position = Vector2(85, 85)
+scale = Vector2(0.79999995, 0.79999995)
+texture = ExtResource("3_udmvt")
+
+[node name="QuitBtn" type="Button" parent="Buttons" unique_id=40300309]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 222.0
+offset_top = 423.0
+offset_right = 387.0
+offset_bottom = 593.0
+scale = Vector2(0.8, 0.8)
+metadata/_edit_use_anchors_ = true
+
+[node name="BehindBtn" type="Sprite2D" parent="Buttons/QuitBtn" unique_id=1853401007]
+position = Vector2(81, 83)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("1_thkxx")
+
+[node name="BorderBtn" type="Sprite2D" parent="Buttons/QuitBtn" unique_id=820408490]
+position = Vector2(81, 83)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_4p8lb")
+
+[node name="QuitIcon" type="Sprite2D" parent="Buttons/QuitBtn" unique_id=25325384]
+position = Vector2(87, 96)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("6_6ru65")
+
+[node name="Test" type="Sprite2D" parent="Buttons" unique_id=1021758367]
+position = Vector2(809, 329)
+scale = Vector2(0.584, 0.584)
+texture = ExtResource("7_6ru65")
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=1741447153]
+position = Vector2(344, 113)
+scale = Vector2(0.658, 0.658)
+texture = ExtResource("7_u8xhc")
