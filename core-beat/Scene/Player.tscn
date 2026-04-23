@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://sapmmlt05jfw"]
+
+[ext_resource type="Texture2D" uid="uid://c36qv3gtwpvuh" path="res://Assets/Art/Player/skate.png" id="1_mud5u"]
+[ext_resource type="Texture2D" uid="uid://e5uatygv28eu" path="res://Assets/Art/Player/hood.png" id="2_fvocf"]
+[ext_resource type="Texture2D" uid="uid://fmuawkx1icrf" path="res://Assets/Art/Player/body.png" id="3_pmp2f"]
+[ext_resource type="Texture2D" uid="uid://b0lpvq63s7nb4" path="res://Assets/Art/Player/gun.png" id="4_3pik8"]
+
+[node name="Node2D" type="Node2D" unique_id=108088232]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1756899161]
+
+[node name="Skate" type="Sprite2D" parent="." unique_id=272811230]
+position = Vector2(8, 40)
+texture = ExtResource("1_mud5u")
+
+[node name="Hood" type="Sprite2D" parent="." unique_id=1182760037]
+position = Vector2(8, 40)
+texture = ExtResource("2_fvocf")
+
+[node name="Body" type="Sprite2D" parent="." unique_id=1130592596]
+position = Vector2(8, 40)
+texture = ExtResource("3_pmp2f")
+
+[node name="Gun" type="Sprite2D" parent="." unique_id=1705683050]
+position = Vector2(8, 40)
+texture = ExtResource("4_3pik8")

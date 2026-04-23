@@ -1,0 +1,191 @@
+[gd_scene format=3 uid="uid://3gxj025qkqgl"]
+
+[ext_resource type="Texture2D" uid="uid://bprcjqa460cq2" path="res://Assets/Art/enemy/enemy boss - gpu gun.png" id="1_hti8k"]
+[ext_resource type="Texture2D" uid="uid://bhq58g21a1dnt" path="res://Assets/Art/enemy/enemy boss - speaker.png" id="1_lgux2"]
+[ext_resource type="Texture2D" uid="uid://cog1n2jkc70n0" path="res://Assets/Art/enemy/enemy boss - fan fan.png" id="1_s685e"]
+[ext_resource type="Texture2D" uid="uid://dellq5bcupy5j" path="res://Assets/Art/enemy/enemy boss - gpu.png" id="2_44hyy"]
+[ext_resource type="Texture2D" uid="uid://hr67uodyr0h" path="res://Assets/Art/enemy/enemy boss - fan gun.png" id="2_n6qjc"]
+[ext_resource type="Texture2D" uid="uid://c0jxqdnwq0fcb" path="res://Assets/Art/enemy/enemy boss - gpu fan.png" id="3_0qcj2"]
+[ext_resource type="Texture2D" uid="uid://c7f71b0eortl3" path="res://Assets/Art/enemy/enemy boss - fan.png" id="3_vmi60"]
+[ext_resource type="Texture2D" uid="uid://bv5tmkmb50bbd" path="res://Assets/Art/enemy/mini enemy - ram.png" id="8_r3ffy"]
+[ext_resource type="Texture2D" uid="uid://dn42smijogd5c" path="res://Assets/Art/enemy/enemy final boss - cpu.png" id="9_5jr7y"]
+[ext_resource type="Texture2D" uid="uid://chsd080f7qewc" path="res://Assets/Art/enemy/enemy final boss - cpu gun.png" id="10_myw4n"]
+[ext_resource type="Texture2D" uid="uid://uqpfb3ybih6u" path="res://Assets/Art/enemy/mini enemy - ram gun.png" id="11_iepwm"]
+[ext_resource type="Texture2D" uid="uid://cpd38p30n0sdi" path="res://Assets/Art/enemy/mini enemy - ram gun block.png" id="12_c152g"]
+[ext_resource type="Texture2D" uid="uid://h6echdsaso4f" path="res://Assets/Art/enemy/mini gun.png" id="13_myw4n"]
+[ext_resource type="Texture2D" uid="uid://cteacjipb72je" path="res://Assets/Art/enemy/mini enemy - B.png" id="14_iepwm"]
+[ext_resource type="Texture2D" uid="uid://dxpqrbvg613tc" path="res://Assets/Art/enemy/mini enemy - C.png" id="15_c152g"]
+[ext_resource type="Texture2D" uid="uid://wufb7wlek1qs" path="res://Assets/Art/enemy/mini enemy - O.png" id="15_ksyog"]
+[ext_resource type="Texture2D" uid="uid://rmdu76ek3tov" path="res://Assets/Art/enemy/mini enemy - R.png" id="16_cq5ds"]
+[ext_resource type="Texture2D" uid="uid://c0yg5cvpnudlk" path="res://Assets/Art/enemy/mini enemy - E.png" id="17_cq5ds"]
+[ext_resource type="Texture2D" uid="uid://7fj0drfp7jt4" path="res://Assets/Art/enemy/mini enemy - T.png" id="19_0dgtb"]
+[ext_resource type="Texture2D" uid="uid://u6fu5ag680pn" path="res://Assets/Art/enemy/mini enemy - A.png" id="19_u5edp"]
+
+[node name="Enemy" type="Node2D" unique_id=1082975014]
+
+[node name="Cpu" type="CharacterBody2D" parent="." unique_id=618235940]
+position = Vector2(-2368, -168)
+
+[node name="EnemyFinalBossCpuGun" type="Sprite2D" parent="Cpu" unique_id=632290129]
+position = Vector2(-4, -186)
+texture = ExtResource("10_myw4n")
+
+[node name="EnemyFinalBossCpuGun2" type="Sprite2D" parent="Cpu" unique_id=412281474]
+position = Vector2(1, 187)
+rotation = -3.1415927
+texture = ExtResource("10_myw4n")
+
+[node name="EnemyFinalBossCpu" type="Sprite2D" parent="Cpu" unique_id=745642911]
+position = Vector2(24, -16)
+texture = ExtResource("9_5jr7y")
+
+[node name="Speaker" type="CharacterBody2D" parent="." unique_id=938535840]
+position = Vector2(-1192, 456)
+
+[node name="EnemyBossSpeaker" type="Sprite2D" parent="Speaker" unique_id=1081557154]
+position = Vector2(0, 10)
+texture = ExtResource("1_lgux2")
+
+[node name="Gpu" type="CharacterBody2D" parent="." unique_id=1987603625]
+position = Vector2(-1728, 416)
+
+[node name="EnemyBossGpuGun" type="Sprite2D" parent="Gpu" unique_id=1336087100]
+position = Vector2(8, 218.3)
+texture = ExtResource("1_hti8k")
+
+[node name="EnemyBossGpu" type="Sprite2D" parent="Gpu" unique_id=1355815930]
+position = Vector2(8, 19.300003)
+texture = ExtResource("2_44hyy")
+
+[node name="EnemyBossGpuFan2" type="Sprite2D" parent="Gpu" unique_id=755183633]
+position = Vector2(-3, 100.3)
+texture = ExtResource("3_0qcj2")
+offset = Vector2(9.255, -30.3)
+
+[node name="EnemyBossGpuFan" type="Sprite2D" parent="Gpu" unique_id=1090533462]
+position = Vector2(-5, -123.7)
+texture = ExtResource("3_0qcj2")
+offset = Vector2(9.255, -30.3)
+
+[node name="Fan" type="CharacterBody2D" parent="." unique_id=759125235]
+position = Vector2(-2192, 320)
+
+[node name="EnemyBossFanFan" type="Sprite2D" parent="Fan" unique_id=2107520604]
+position = Vector2(0, 3)
+texture = ExtResource("1_s685e")
+
+[node name="EnemyBossFanGun" type="Sprite2D" parent="Fan" unique_id=354991103]
+position = Vector2(0, 208)
+texture = ExtResource("2_n6qjc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Fan" unique_id=1113163505]
+position = Vector2(28, 1)
+texture = ExtResource("3_vmi60")
+
+[node name="ram" type="CharacterBody2D" parent="." unique_id=686885711]
+position = Vector2(-2320, 840)
+
+[node name="MiniEnemyRam" type="Sprite2D" parent="ram" unique_id=508791473]
+position = Vector2(10, 15)
+texture = ExtResource("8_r3ffy")
+
+[node name="MiniEnemyRamGun" type="Sprite2D" parent="ram" unique_id=1295509794]
+position = Vector2(10, -161)
+texture = ExtResource("11_iepwm")
+
+[node name="MiniEnemyRamGunBlock" type="Sprite2D" parent="ram" unique_id=2002648054]
+position = Vector2(9, 13)
+texture = ExtResource("12_c152g")
+
+[node name="MiniEnemyRam2" type="Sprite2D" parent="ram" unique_id=1650111025]
+position = Vector2(2.0000305, -20.99997)
+rotation = 3.1415927
+texture = ExtResource("8_r3ffy")
+
+[node name="MiniEnemyRamGun2" type="Sprite2D" parent="ram" unique_id=1026843560]
+position = Vector2(1.0000305, 141.00003)
+rotation = 3.1415927
+texture = ExtResource("11_iepwm")
+
+[node name="MiniEnemyRamGunBlock2" type="Sprite2D" parent="ram" unique_id=2010610821]
+position = Vector2(1.0000305, -22.99997)
+rotation = 3.1415927
+texture = ExtResource("12_c152g")
+
+[node name="KeyCapsC" type="CharacterBody2D" parent="." unique_id=1146505346]
+position = Vector2(-1216, -64)
+
+[node name="MiniGun" type="Sprite2D" parent="KeyCapsC" unique_id=1711124349]
+position = Vector2(7, 23)
+texture = ExtResource("13_myw4n")
+
+[node name="MiniEnemyC" type="Sprite2D" parent="KeyCapsC" unique_id=977195657]
+position = Vector2(8, 28)
+texture = ExtResource("15_c152g")
+
+[node name="KeyCapsO" type="CharacterBody2D" parent="." unique_id=14683670]
+position = Vector2(-1944, -264)
+
+[node name="MiniGun" type="Sprite2D" parent="KeyCapsO" unique_id=209158757]
+position = Vector2(7, 23)
+texture = ExtResource("13_myw4n")
+
+[node name="MiniEnemyO" type="Sprite2D" parent="KeyCapsO" unique_id=1255726632]
+position = Vector2(7, 20)
+texture = ExtResource("15_ksyog")
+
+[node name="KeyCapsR" type="CharacterBody2D" parent="." unique_id=450401705]
+position = Vector2(-1464, -272)
+
+[node name="MiniGun" type="Sprite2D" parent="KeyCapsR" unique_id=69616311]
+position = Vector2(7, 19)
+texture = ExtResource("13_myw4n")
+
+[node name="MiniEnemyR" type="Sprite2D" parent="KeyCapsR" unique_id=782165940]
+position = Vector2(8, 24)
+texture = ExtResource("16_cq5ds")
+
+[node name="KeyCapsE" type="CharacterBody2D" parent="." unique_id=1238249909]
+position = Vector2(-1704, -272)
+
+[node name="MiniGun" type="Sprite2D" parent="KeyCapsE" unique_id=1192778874]
+position = Vector2(8, 24)
+texture = ExtResource("13_myw4n")
+
+[node name="MiniEnemyE" type="Sprite2D" parent="KeyCapsE" unique_id=1090047672]
+position = Vector2(8, 24)
+texture = ExtResource("17_cq5ds")
+
+[node name="KeyCapsB" type="CharacterBody2D" parent="." unique_id=720936195]
+position = Vector2(-1704, -64)
+
+[node name="MiniGun" type="Sprite2D" parent="KeyCapsB" unique_id=1428064769]
+position = Vector2(8, 22)
+texture = ExtResource("13_myw4n")
+
+[node name="MiniEnemyB" type="Sprite2D" parent="KeyCapsB" unique_id=515401592]
+position = Vector2(8, 24)
+texture = ExtResource("14_iepwm")
+
+[node name="KeyCapsA" type="CharacterBody2D" parent="." unique_id=1686231208]
+position = Vector2(-1464, -63.999992)
+rotation = 0.007205719
+
+[node name="MiniGun" type="Sprite2D" parent="KeyCapsA" unique_id=1813272696]
+position = Vector2(8.486758, 20.222633)
+texture = ExtResource("13_myw4n")
+
+[node name="MiniEnemyA" type="Sprite2D" parent="KeyCapsA" unique_id=1878715499]
+position = Vector2(10.486758, 26.222633)
+texture = ExtResource("19_u5edp")
+
+[node name="KeyCapsT" type="CharacterBody2D" parent="." unique_id=991884039]
+position = Vector2(-1216, -256)
+
+[node name="MiniGun" type="Sprite2D" parent="KeyCapsT" unique_id=1292231254]
+position = Vector2(8, 8)
+texture = ExtResource("13_myw4n")
+
+[node name="MiniEnemyT" type="Sprite2D" parent="KeyCapsT" unique_id=1920152258]
+position = Vector2(8, 8)
+texture = ExtResource("19_0dgtb")
